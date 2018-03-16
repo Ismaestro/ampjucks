@@ -1,21 +1,18 @@
-# Example project to build a website with AMP + Nunjucks + Gulp
+# Example project to build a static website with AMP + Nunjucks + Gulp
 
-> ### Base project made with much  :heart: . Contains amp components, and a free template, etc.
+> ### Base project made with much  :heart: . Contains amp components, and a free template. Yes, AMP valid.
 
 ## Usage
-
-**Warning: we strongly recommend node >=v6.9.0 and npm >=3.0.0**
 
 `npm i` - Installs everything needed
 
 `npm run build` - Creates dist folder ready to deploy everywhere
 
 ## Features
-* Responsive layout (Bootstrap grid)
-* Header and footer templates
+* Nunjucks templates with structured data
 * Custom fonts
 * Free template
-* AMP valid
+* CSS separated and mixed and minified with gulp tasks
 
 ## Contributing
 - Please see the CONTRIBUTING file for guidelines.
