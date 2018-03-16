@@ -1,0 +1,52 @@
+{% set
+	pageData =
+		{
+			title: 'Ampjunks',
+			author: 'Ismaestro',
+			description: 'AMP Base Project with Nunjucks',
+			keywords: 'amp, nunjucks',
+			canonical: 'http://localhost/',
+
+			contentFile: 'templates/contents/index.nunjucks',
+
+			scripts: [
+				{
+					"src": "https://cdn.ampproject.org/v0/amp-carousel-0.1.js",
+					"tags": {"attr": "custom-element", "val": "amp-carousel"}
+				},
+				{
+					"src": "https://cdn.ampproject.org/v0/amp-sidebar-0.1.js",
+					"tags": {"attr": "custom-element", "val": "amp-sidebar"}
+				},
+				{
+					"src": "https://cdn.ampproject.org/v0/amp-instagram-0.1.js",
+					"tags": {"attr": "custom-element", "val": "amp-instagram"}
+				},
+				{
+					"src": "https://cdn.ampproject.org/v0/amp-accordion-0.1.js",
+					"tags": {"attr": "custom-element", "val": "amp-accordion"}
+				},
+				{
+					"src": "https://cdn.ampproject.org/v0/amp-social-share-0.1.js",
+					"tags": {"attr": "custom-element", "val": "amp-social-share"}
+				},
+				{
+					"src": "https://cdn.ampproject.org/v0.js"
+				}
+			],
+
+			css: [
+				"index"
+			],
+
+			structuredData: '{
+			"@context": "http://schema.org",
+			"@type": "WebSite",
+			"name": "Ampjunks",
+			"alternateName": "AMP base project",
+			"description": "AMP Base Project with Nunjucks",
+			"url": "http://localhost"
+		}'
+		}
+%}
+{% extends "templates/layout.nunjucks" %}

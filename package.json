@@ -1,0 +1,22 @@
+{
+  "name": "ampjunks",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">= 6.9.0",
+    "npm": ">= 3.0.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-changed": "3.2.0",
+    "gulp-clean": "0.4.0",
+    "gulp-htmlmin": "4.0.0",
+    "gulp-nunjucks-render": "2.2.2",
+    "gulp-replace": "0.6.1",
+    "pump": "3.0.0",
+    "sw-toolbox": "3.6.0"
+  }
+}
