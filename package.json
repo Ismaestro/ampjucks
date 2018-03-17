@@ -7,16 +7,20 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "gulp build"
+    "start": "gulp development",
+    "build": "gulp build",
+    "validate": "gulp validateHTML"
   },
   "devDependencies": {
     "gulp": "3.9.1",
-    "gulp-changed": "3.2.0",
+    "gulp-amphtml-validator": "1.0.2",
     "gulp-clean": "0.4.0",
+    "gulp-connect": "5.5.0",
     "gulp-htmlmin": "4.0.0",
     "gulp-nunjucks-render": "2.2.2",
-    "gulp-replace": "0.6.1",
+    "gulp-open": "^3.0.0",
+    "gulp-watch": "5.0.0",
     "pump": "3.0.0",
-    "sw-toolbox": "3.6.0"
+    "run-sequence": "2.2.1"
   }
 }
