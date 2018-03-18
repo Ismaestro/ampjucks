@@ -9,7 +9,9 @@ var gulp = require('gulp'),
   connect = require('gulp-connect'),
   watch = require('gulp-watch'),
   gulpAmpValidator = require('gulp-amphtml-validator'),
-  open = require('gulp-open');
+  open = require('gulp-open'),
+  sass = require('gulp-sass'),
+  rename = require('gulp-rename');
 
 var config = {
   port: 8000,
@@ -17,11 +19,14 @@ var config = {
   distFolder: 'dist'
 };
 
-gulp.task('development', ['webserver', 'watch', 'build', 'openBrowser'], function () {
+gulp.task('development', function (done) {
+  runSequence('webserver', 'watch', 'build', 'openBrowser', function () {
+    done();
+  });
 });
 
 gulp.task('webserver', function () {
-  return connect.server({
+  connect.server({
     root: ['./' + config.distFolder],
     livereload: true,
     port: config.port,
@@ -39,14 +44,24 @@ gulp.task('openBrowser', function(){
     .pipe(open({uri: 'http://localhost:' + config.port}));
 });
 
-gulp.task('build', function () {
-  runSequence('clean', 'renderTemplates', 'copyImages', 'minifyFiles', function () {
+gulp.task('build', function (done) {
+  runSequence('clean', 'sass', 'renderTemplates', 'copyImages', 'removeCss', function () {
+    done()
   });
 });
 
 gulp.task('clean', function () {
   return gulp.src(config.distFolder, {read: false, force: true})
     .pipe(clean());
+});
+
+gulp.task('sass', function () {
+  return gulp.src(config.sourceFolder + '/templates/sass/**/*.scss')
+    .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(rename(function (path) {
+      path.basename = "_" + path.basename;
+    }))
+    .pipe(gulp.dest(config.sourceFolder + '/templates/css/'));
 });
 
 gulp.task('renderTemplates', function () {
@@ -76,6 +91,11 @@ gulp.task('minifyFiles', function (cb) {
       gulp.dest(config.distFolder)
     ], cb);
   }, 100)
+});
+
+gulp.task('removeCss', function () {
+  return gulp.src(config.sourceFolder + '/templates/css', {read: false, force: true})
+    .pipe(clean());
 });
 
 gulp.task('validateHTML', function() {

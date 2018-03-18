@@ -1,4 +1,4 @@
-# Example project to build a static website with AMP + Nunjucks + Gulp
+# Example project to build a static website with AMP + Nunjucks + SASS + Gulp
 
 > ### Base project made with much  :heart:. Contains amp components, and a free template. Yes, AMP validated.
 
@@ -22,7 +22,7 @@ https://ismaestro.github.io/ampjucks/
 * Nunjucks templates
 * Gulp tasks for development server, watch changes, livereload, minify files, clean dist folder, etc
 * Free template
-* CSS separated and mixed and minified with gulp tasks
+* SASS support. Files separated and mixed and minified with gulp tasks
 
 ## Contributing
 - Please see the CONTRIBUTING file for guidelines.
