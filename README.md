@@ -16,6 +16,8 @@ https://ismaestro.github.io/ampjucks/
 
 `npm run validate` - Validate all html files inside dist folder to be AMP valid
 
+* If you use Webstorm, see [this](https://github.com/mozilla/nunjucks/issues/472).
+
 ## Features
 * Nunjucks templates
 * Gulp tasks for development server, watch changes, livereload, minify files, clean dist folder, etc
