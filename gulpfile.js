@@ -21,7 +21,7 @@ gulp.task('development', ['webserver', 'watch', 'build', 'openBrowser'], functio
 });
 
 gulp.task('webserver', function () {
-  connect.server({
+  return connect.server({
     root: ['./' + config.distFolder],
     livereload: true,
     port: config.port,
@@ -35,7 +35,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('openBrowser', function(){
-  gulp.src(__filename)
+  return gulp.src(__filename)
     .pipe(open({uri: 'http://localhost:' + config.port}));
 });
 
@@ -50,13 +50,13 @@ gulp.task('clean', function () {
 });
 
 gulp.task('renderTemplates', function () {
-  gulp.src([config.sourceFolder + '/*.+(html|nunjucks)'])
+  return gulp.src([config.sourceFolder + '/*.+(html|nunjucks)'])
     .pipe(nunjucksRender({path: [config.sourceFolder]}))
     .pipe(gulp.dest(config.distFolder));
 });
 
 gulp.task('copyImages', function () {
-  gulp.src([config.sourceFolder + '/assets/img/**/*'])
+  return gulp.src([config.sourceFolder + '/assets/img/**/*'])
     .pipe(gulp.dest(config.distFolder + '/assets/img'));
 });
 
