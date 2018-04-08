@@ -1,5 +1,0 @@
-<header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4 ">
-<div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger  pr2  ">☰
-</div>
-    <div class="ampstart-headerbar-title mx-auto h3">The Scenic</div>
-</header>

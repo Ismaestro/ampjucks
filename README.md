@@ -19,6 +19,7 @@ https://ismaestro.github.io/ampjucks/
 * If you use Webstorm, see [this](https://github.com/mozilla/nunjucks/issues/472).
 
 ## Features
+* Real template from AMP Start project (e-commerce)
 * Nunjucks templates
 * Gulp tasks for development server, watch changes, livereload, minify files, clean dist folder, etc
 * Free template
