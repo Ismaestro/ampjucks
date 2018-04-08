@@ -1,0 +1,84 @@
+{%
+    set config = {
+    }
+%}
+{%
+    set urls = {
+    }
+%}
+<!doctype html>
+<html AMP lang="{$ pageData.lang $}">
+<head>
+    <meta charset="utf-8">
+    <title>{$ pageData.title $}</title>
+    {% if (pageData.robots == 'noindex') %}
+        <meta name="robots" content="noindex">
+    {% endif %}
+    <meta name="author" content="{$ pageData.author $}"/>
+    <meta name="description" content="{$ pageData.description $}"/>
+    <meta name="keywords" content="{$ pageData.keywords $}"/>
+    <meta property="og:title" content="{$ pageData.title $}"/>
+    <link rel="canonical" href="{$ pageData.canonical $}"/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1">
+
+    <!--*
+        *   FavIcons
+        **-->
+    {% include "shared/includes/favicons.nunjucks" %}
+
+    <!--*
+        *   Fonts
+        **-->
+    {% include "shared/includes/fonts.nunjucks" %}
+
+    <!--*
+        *   JavaScripts to Include
+        **-->
+    {%- for script in pageData.scripts -%}
+        {% set attrz = "" -%}
+        {% if script.tags.attr and script.tags.val -%}
+            {% set attrz = script.tags.attr + "=" + script.tags.val -%}
+        {%- endif %}
+        <script async {$ attrz $} src="{$ script.src $}"></script>
+    {%- endfor %}
+
+    <!--*
+        *   Structured Data
+        **-->
+    <script type="application/ld+json">
+        {$ pageData.structuredData | safe $}
+    </script>
+
+    <!--*
+        *   Required CSS Code (AMP Boilerplate)
+        **-->
+    {% include "shared/includes/boilerplate.nunjucks" %}
+
+    <!--*
+        *   Custom CSS Code
+        **-->
+    <style amp-custom>
+        {%- include "css/reset.css" %}
+        {%- include "css/normalize.css" %}
+        {%- include "css/global.css" %}
+
+        {%- include "css/header.css" %}
+        {%- include "css/sidebar.css" %}
+        {%- include "css/footer.css" %}
+
+        {% for cssFile in pageData.css -%}
+
+        {% include "css/" + cssFile + ".css" %}
+
+        {% endfor %}
+    </style>
+</head>
+<body>
+{% include "shared/includes/header.nunjucks" %}
+
+{% include pageData.contentFile %}
+
+{% include "shared/includes/sidebar.nunjucks" %}
+{% include "shared/includes/footer.nunjucks" %}
+</body>
+</html>

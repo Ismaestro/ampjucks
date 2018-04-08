@@ -25,6 +25,10 @@ https://ismaestro.github.io/ampjucks/
 * Free template
 * SASS support. Files separated and mixed and minified with gulp tasks
 
+## Dist folder
+
+Build task create two different folders with the HTML files one per language. Deploy this folders the way you like the most.
+
 ## Contributing
 - Please see the CONTRIBUTING file for guidelines.
 - Create **pull requests, submit bugs, suggest new features** or documentation updates :wrench:
