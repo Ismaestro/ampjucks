@@ -2,10 +2,6 @@
 
 > ### Base project made with much  :heart:. Contains amp components, and a free template. Yes, AMP validated.
 
-## Live demo
-
-https://ismaestro.github.io/ampjucks/
-
 ## Usage
 
 `npm i` - Installs everything needed
@@ -27,7 +23,7 @@ https://ismaestro.github.io/ampjucks/
 
 ## Dist folder
 
-Build task create two different folders with the HTML files one per language. Deploy this folders the way you like the most.
+Build task creates two different folders with the HTML files one per language. Deploy this folders the way you like the most.
 
 ## Contributing
 - Please see the CONTRIBUTING file for guidelines.
