@@ -62,11 +62,12 @@ gulp.task('sass', function () {
   return gulp.src(config.sourceFolder + '/**/*.scss')
     .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(rename({dirname: ''}))
-    .pipe(gulp.dest(config.sourceFolder + '/css/'));
+    .pipe(gulp.dest(config.sourceFolder + '/sass/css/'));
 });
 
 gulp.task('renderTemplates', function () {
-  return gulp.src([config.sourceFolder + '/templates/**/!(*.content)*.+(html|nunjucks)'], {base: "./src/templates"})
+  return gulp.src([config.sourceFolder + '/templates/pages/**/!(*.content)*.+(html|nunjucks)'],
+    {base: "./src/templates"})
     .pipe(nunjucksRender({
       path: [config.sourceFolder],
       envOptions: {
@@ -79,7 +80,7 @@ gulp.task('renderTemplates', function () {
       }
     }))
     .pipe(rename(function (file) {
-      file.dirname = file.dirname.substring(file.dirname.indexOf("/") + 1);
+      file.dirname = file.dirname.substring(file.dirname.lastIndexOf("/") + 1);
       return file;
     }))
     .pipe(gulp.dest(config.distFolder));

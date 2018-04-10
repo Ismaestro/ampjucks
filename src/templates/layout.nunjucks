@@ -24,12 +24,12 @@
     <!--*
         *   FavIcons
         **-->
-    {% include "shared/includes/favicons.nunjucks" %}
+    {% include "templates/includes/favicons.nunjucks" %}
 
     <!--*
         *   Fonts
         **-->
-    {% include "shared/includes/fonts.nunjucks" %}
+    {% include "templates/includes/fonts.nunjucks" %}
 
     <!--*
         *   JavaScripts to Include
@@ -52,33 +52,33 @@
     <!--*
         *   Required CSS Code (AMP Boilerplate)
         **-->
-    {% include "shared/includes/boilerplate.nunjucks" %}
+    {% include "templates/includes/boilerplate.nunjucks" %}
 
     <!--*
         *   Custom CSS Code
         **-->
     <style amp-custom>
-        {%- include "css/reset.css" %}
-        {%- include "css/normalize.css" %}
-        {%- include "css/global.css" %}
+        {%- include "sass/css/reset.css" %}
+        {%- include "sass/css/normalize.css" %}
+        {%- include "sass/css/global.css" %}
 
-        {%- include "css/header.css" %}
-        {%- include "css/sidebar.css" %}
-        {%- include "css/footer.css" %}
+        {%- include "sass/css/header.css" %}
+        {%- include "sass/css/sidebar.css" %}
+        {%- include "sass/css/footer.css" %}
 
         {% for cssFile in pageData.css -%}
 
-        {% include "css/" + cssFile + ".css" %}
+        {% include "sass/css/" + cssFile + ".css" %}
 
         {% endfor %}
     </style>
 </head>
 <body>
-{% include "shared/includes/header.nunjucks" %}
+{% include "templates/includes/header/header.nunjucks" %}
 
 {% include pageData.contentFile %}
 
-{% include "shared/includes/sidebar.nunjucks" %}
-{% include "shared/includes/footer.nunjucks" %}
+{% include "templates/includes/sidebar/sidebar.nunjucks" %}
+{% include "templates/includes/footer/footer.nunjucks" %}
 </body>
 </html>

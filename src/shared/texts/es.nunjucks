@@ -1,5 +1,0 @@
-{% set texts =
-		{
-        }
-%}
-{% extends "shared/layout.nunjucks" %}

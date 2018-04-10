@@ -10,7 +10,7 @@
 			keywords: '',
 			canonical: 'https://localhost:8000',
 
-			contentFile: 'templates/home/home.content.nunjucks',
+			contentFile: 'templates/pages/home/home.content.nunjucks',
 
 			scripts: [
 				{
@@ -56,4 +56,4 @@
 						}'
 		}
 %}
-{% extends "shared/texts/" + pageData.lang + ".nunjucks" %}
+{% extends "templates/texts/" + pageData.lang + ".nunjucks" %}

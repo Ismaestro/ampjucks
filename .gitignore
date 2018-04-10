@@ -1,4 +1,4 @@
 .idea
 dist
 node_modules
-src/css
+src/sass/css
