@@ -10,13 +10,13 @@ var gulp = require('gulp'),
   gulpAmpValidator = require('gulp-amphtml-validator'),
   open = require('gulp-open'),
   rename = require('gulp-rename'),
+  sitemap = require('gulp-sitemap'),
   sass = require('gulp-sass');
 
 var config = {
+  url: 'http://localhost',
   port: 8000,
-  sourceFolder: 'src',
-  distFolder: 'dist',
-  defaultLanguage: 'es',
+  defaultLanguage: 'en',
   indexFileName: 'home.html'
 };
 
@@ -29,7 +29,7 @@ gulp.task('development', function (done) {
 gulp.task('browser-sync', function () {
   browserSync.init({
     server: {
-      baseDir: config.distFolder
+      baseDir: 'dist'
     },
     port: config.port,
     ui: false,
@@ -38,7 +38,7 @@ gulp.task('browser-sync', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(config.sourceFolder + '/**/*', ['build']);
+  gulp.watch('src/**/*', ['build']);
 });
 
 gulp.task('openBrowser', function () {
@@ -47,7 +47,7 @@ gulp.task('openBrowser', function () {
 });
 
 gulp.task('build', function (done) {
-  runSequence('clean', 'sass', 'renderTemplates', 'minifyFiles', 'copyAssets', function () {
+  runSequence('clean', 'sass', 'renderTemplates', 'minifyFiles', 'copyAssets', 'sitemap', function () {
     console.log(new Date().toLocaleTimeString() + " - Build finished");
     browserSync.reload();
     done();
@@ -55,21 +55,21 @@ gulp.task('build', function (done) {
 });
 
 gulp.task('clean', function () {
-  return del([config.distFolder]);
+  return del(['dist']);
 });
 
 gulp.task('sass', function () {
-  return gulp.src(config.sourceFolder + '/**/*.scss')
+  return gulp.src('src/**/*.scss')
     .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(rename({dirname: ''}))
-    .pipe(gulp.dest(config.sourceFolder + '/sass/css/'));
+    .pipe(gulp.dest('src/sass/css/'));
 });
 
 gulp.task('renderTemplates', function () {
-  return gulp.src([config.sourceFolder + '/templates/pages/**/!(*.content)*.+(html|nunjucks)'],
-    {base: "./src/templates"})
+  return gulp.src(['src/templates/pages/**/!(*.content)*.+(html|nunjucks)'],
+    {base: "src/templates"})
     .pipe(nunjucksRender({
-      path: [config.sourceFolder],
+      path: ['src'],
       envOptions: {
         tags: {
           variableStart: '{$',
@@ -83,26 +83,36 @@ gulp.task('renderTemplates', function () {
       file.dirname = file.dirname.substring(file.dirname.lastIndexOf("/") + 1);
       return file;
     }))
-    .pipe(gulp.dest(config.distFolder));
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('copyAssets', function () {
-  return gulp.src([config.sourceFolder + '/assets/**/*'])
-    .pipe(gulp.dest(config.distFolder + '/assets/'));
+  return gulp.src(['src/assets/**/*'])
+    .pipe(gulp.dest('dist/assets/'));
 });
 
 gulp.task('minifyFiles', function () {
-  return gulp.src(config.distFolder + '/**/*.html')
+  return gulp.src('dist/**/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest(config.distFolder));
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('removeCss', function () {
-  return del([config.sourceFolder + '/css']);
+  return del(['src/css']);
+});
+
+gulp.task('sitemap', function () {
+  return gulp.src('dist/**/*.html', {
+      read: false
+    })
+    .pipe(sitemap({
+      siteUrl: config.url + ':' + config.port
+    }))
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('validateHTML', function () {
-  return gulp.src(config.distFolder + '/**/*.html')
+  return gulp.src('dist/**/*.html')
     .pipe(gulpAmpValidator.validate())
     .pipe(gulpAmpValidator.format())
     .pipe(gulpAmpValidator.failAfterError());
