@@ -1,1 +1,9 @@
 @import "../../../sass/mixins";
+
+header {
+  svg:hover {
+    path {
+      fill: grey;
+    }
+  }
+}

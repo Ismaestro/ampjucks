@@ -1,6 +1,6 @@
 <main id="content" role="main" class="main commerce-landing">
     <section class="commerce-hero-content-wrapper center overflow-hidden">
-        <a href="product-listing.amp.html" class="text-decoration-none block">
+        <a href="#" class="text-decoration-none block">
             <amp-img class="commerce-hero-image" src="/assets/img/narrow-landing-01.jpg" width="750" height="573"
                      layout="responsive" media="(max-width: 52.06rem)" alt="Hero Landing 1" noloading="">
                 <div placeholder="" class="commerce-loader"></div>
@@ -20,7 +20,7 @@
         </a>
     </section>
     <section class="commerce-hero-content-wrapper center overflow-hidden">
-        <a href="blog-listing.amp.html" class="text-decoration-none block">
+        <a href="#" class="text-decoration-none block">
             <amp-img class="commerce-hero-image" src="/assets/img/narrow-landing-02.jpg" width="750" height="573"
                      layout="responsive" media="(max-width: 52.06rem)" alt="Hero Landing 1" noloading="">
                 <div placeholder="" class="commerce-loader"></div>
@@ -40,7 +40,7 @@
         </a>
     </section>
     <section class="commerce-hero-content-wrapper center overflow-hidden">
-        <a href="product-listing.amp.html" class="text-decoration-none block">
+        <a href="#" class="text-decoration-none block">
             <amp-img class="commerce-hero-image" src="/assets/img/narrow-landing-03.jpg" width="750" height="573"
                      layout="responsive" media="(max-width: 52.06rem)" alt="Hero Landing 1" noloading="">
                 <div placeholder="" class="commerce-loader"></div>
@@ -60,7 +60,7 @@
         </a>
     </section>
     <section class="commerce-hero-content-wrapper center overflow-hidden">
-        <a href="blog-listing.amp.html" class="text-decoration-none block">
+        <a href="#" class="text-decoration-none block">
             <amp-img class="commerce-hero-image" src="/assets/img/narrow-landing-04.jpg" width="750" height="573"
                      layout="responsive" media="(max-width: 52.06rem)" alt="Hero Landing 1" noloading="">
                 <div placeholder="" class="commerce-loader"></div>

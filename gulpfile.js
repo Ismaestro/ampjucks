@@ -70,7 +70,7 @@ gulp.task('renderTemplates', function () {
     {base: "src/templates"})
     .pipe(nunjucksRender({
       path: ['src'],
-      envOptions: {
+      envOptions: { // This is to avoid having conflicts with Mustache used in AMP in amp-list component e.g.
         tags: {
           variableStart: '{$',
           variableEnd: '$}',

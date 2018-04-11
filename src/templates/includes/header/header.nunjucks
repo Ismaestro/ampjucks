@@ -6,7 +6,7 @@
             <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
         </svg>
     </div>
-    <a href="landing.amp.html"
+    <a href="#"
        class="text-decoration-none inline-block mx-auto ampstart-headerbar-home-link mb1 md-mb0 ">
         <amp-img src="/assets/img/logo.png" width="96" height="27" layout="fixed" class="my0 mx-auto "
                  alt=""></amp-img>

@@ -1,5 +1,7 @@
 {%
     set config = {
+        telephone: '+440000000000',
+        email: 'info@BS-LDN'
     }
 %}
 {%

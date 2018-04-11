@@ -9,17 +9,17 @@
     <nav class="ampstart-sidebar-nav ampstart-nav">
         <ul class="list-reset m0 p0 ampstart-label">
             <li>
-                <a href="landing.amp.html" class="text-decoration-none block 22">
+                <a href="#" class="text-decoration-none block 22">
                     <amp-img src="/assets/img/logo-nav.png" width="279" height="175" layout="responsive"
                              class="ampstart-sidebar-nav-image inline-block mb4" alt="Company logo" noloading="">
                         <div placeholder="" class="commerce-loader"></div>
                     </amp-img>
                 </a>
             </li>
-            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="product-listing.amp.html">Products</a>
+            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#">Products</a>
             </li>
-            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="blog-listing.amp.html">Blog</a></li>
-            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="contact.amp.html">Contact us</a></li>
+            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#">Blog</a></li>
+            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#">Contact us</a></li>
         </ul>
     </nav>
 
