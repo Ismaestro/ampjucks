@@ -1,7 +1,0 @@
-@import "colors";
-@import "functions";
-
-@mixin font-size($size) {
-  font-size: $size; //Fallback in px
-  font-size: calculateRem($size);
-}
