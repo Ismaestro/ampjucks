@@ -16,15 +16,15 @@
                     </amp-img>
                 </a>
             </li>
-            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#">Products</a>
+            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#">{$ texts.products $}</a>
             </li>
             <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#">Blog</a></li>
-            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#">Contact us</a></li>
+            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#">{$ texts.contactUs $}</a></li>
         </ul>
     </nav>
 
 
-    <h3 class="h7 block pt3">follow us</h3>
+    <h3 class="h7 block pt3">{$ texts.followUs $}</h3>
     <ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">
         <li>
             <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Facebook">
@@ -56,8 +56,8 @@
     </ul>
 
     <ul class="ampstart-sidebar-faq list-reset m0">
-        <li class="ampstart-faq-item"><a href="#" class="text-decoration-none">Size Guide</a></li>
-        <li class="ampstart-faq-item"><a href="#" class="text-decoration-none">Returns Policy</a></li>
-        <li class="ampstart-faq-item"><a href="#" class="text-decoration-none">Cookie &amp; privacy policy</a></li>
+        <li class="ampstart-faq-item"><a href="#" class="text-decoration-none">{$ texts.sizeGuide $}</a></li>
+        <li class="ampstart-faq-item"><a href="#" class="text-decoration-none">{$ texts.returnsPolicy $}</a></li>
+        <li class="ampstart-faq-item"><a href="#" class="text-decoration-none">{$ texts.cookiePrivacyPolicy $}</a></li>
     </ul>
 </amp-sidebar>

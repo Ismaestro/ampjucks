@@ -1,5 +1,23 @@
 {% set texts =
 		{
+            products: 'Productos',
+            contactUs: 'Contactanos',
+            followUs: 'Síguenos',
+            aboutUs: 'Quiénes somos',
+            findAStore: 'Encuentra una tienda',
+            sizeGuide: 'Guía de tallas',
+            returnsPolicy: 'Política de devoluciones',
+            cookiePrivacyPolicy: 'Cookies & Política de privacidad',
+            theEssentials: 'Lo esencial',
+            clothsEveryRiderNeeds: 'Estos son los marcos, la ropa y los accesorios clave que todo ciclista necesita.',
+            shop: 'Tienda',
+            read: 'Leer',
+            lostHighways: 'Autopistas perdidas',
+            goTheDistance: 'Recorre la distancia y descubre nuevos niveles de resistencia en el camino. Explora las 10 randonnées más duras del mundo.',
+            set3Series: 'Sprocket Set 3 Series',
+            timelessStyle: 'La bicicleta completa con marco de acero que combina un rendimiento incomparable con un estilo atemporal.',
+            noSleep: 'No duermas hasta Brooklyn',
+            earlyMornings: 'Temprano por la mañana, café negro, carbohidratos. Pasamos una semana en la carretera con Five Borough Cycle Club de Nueva York.'
         }
 %}
 {% extends "templates/layout.nunjucks" %}

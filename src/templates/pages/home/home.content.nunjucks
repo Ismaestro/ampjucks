@@ -11,10 +11,11 @@
             </amp-img>
             <div class="commerce-hero-content commerce-hero-content-theme-primary flex justify-center flex-column md-mx-auto md-p0">
                 <div class="commerce-hero-align md-mx-auto">
-                    <h2 class="commerce-hero-content-title h4 md-h1 caps md-mb2 md-pl4">The Essentials</h2>
-                    <p class="commerce-hero-content-body">These are the key frames, clothing and accessories every rider
-                        needs.</p>
-                    <div class="ampstart-btn ampstart-btn-secondary caps md-ml4">shop</div>
+                    <h2 class="commerce-hero-content-title h4 md-h1 caps md-mb2 md-pl4">{$ texts.theEssentials $}</h2>
+                    <p class="commerce-hero-content-body">
+                        {$ texts.clothsEveryRiderNeeds $}
+                    </p>
+                    <div class="ampstart-btn ampstart-btn-secondary caps md-ml4">{$ texts.shop $}</div>
                 </div>
             </div>
         </a>
@@ -31,10 +32,11 @@
             </amp-img>
             <div class="commerce-hero-content commerce-hero-content-theme-primary flex justify-center flex-column md-mx-auto md-p0">
                 <div class="commerce-hero-align md-mx-auto">
-                    <h2 class="commerce-hero-content-title h4 md-h1 caps md-mb2 md-pl4">Lost Highways</h2>
-                    <p class="commerce-hero-content-body">Go the distance and discover new levels of endurance along the
-                        way. Explore the world’s 10 toughest randonnées.</p>
-                    <div class="ampstart-btn ampstart-btn-secondary caps md-ml4">read</div>
+                    <h2 class="commerce-hero-content-title h4 md-h1 caps md-mb2 md-pl4">{$ texts.lostHighways $}</h2>
+                    <p class="commerce-hero-content-body">
+                        {$ texts.goTheDistance $}
+                    </p>
+                    <div class="ampstart-btn ampstart-btn-secondary caps md-ml4">{$ texts.read $}</div>
                 </div>
             </div>
         </a>
@@ -51,10 +53,11 @@
             </amp-img>
             <div class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0">
                 <div class="commerce-hero-align md-mx-auto">
-                    <h2 class="commerce-hero-content-title h4 md-h1 caps md-mb2 md-pl4">Sprocket Set 3 Series</h2>
-                    <p class="commerce-hero-content-body">The steel-framed complete bike that combines peerless
-                        performance with timeless style.</p>
-                    <div class="ampstart-btn ampstart-btn-secondary caps md-ml4">shop</div>
+                    <h2 class="commerce-hero-content-title h4 md-h1 caps md-mb2 md-pl4">{$ texts.set3Series $}</h2>
+                    <p class="commerce-hero-content-body">
+                        {$ texts.timelessStyle $}
+                    </p>
+                    <div class="ampstart-btn ampstart-btn-secondary caps md-ml4">{$ texts.shop $}</div>
                 </div>
             </div>
         </a>
@@ -71,10 +74,11 @@
             </amp-img>
             <div class="commerce-hero-content commerce-hero-content-theme-primary flex justify-center flex-column md-mx-auto md-p0">
                 <div class="commerce-hero-align md-mx-auto">
-                    <h2 class="commerce-hero-content-title h4 md-h1 caps md-mb2 md-pl4">No Sleep &#39;til Brooklyn</h2>
-                    <p class="commerce-hero-content-body">Early mornings, black coffee, carbs. We spend a week on the
-                        road with New York&#39;s Five Borough Cycle Club.</p>
-                    <div class="ampstart-btn ampstart-btn-secondary caps md-ml4">read</div>
+                    <h2 class="commerce-hero-content-title h4 md-h1 caps md-mb2 md-pl4">{$ texts.noSleep $}</h2>
+                    <p class="commerce-hero-content-body">
+                        {$ texts.earlyMornings $}
+                    </p>
+                    <div class="ampstart-btn ampstart-btn-secondary caps md-ml4">{$ texts.read $}</div>
                 </div>
             </div>
         </a>
