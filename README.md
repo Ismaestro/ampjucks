@@ -2,10 +2,7 @@
 
 > ### Base project made with much  :heart:. Contains amp components, and a free template. Yes, AMP validated.
 
-## Live demo
-
-* [English](https://ampjucks.com/)
-* [Spanish](https://ampjucks.com/es)
+## [LIVE DEMO](https://ampjucks.com/)
 
 ## Usage
 
