@@ -23,6 +23,10 @@
         </ul>
     </nav>
 
+    <p id="languages">
+        <a href="/en">en</a> | <a href="/es">es</a>
+    </p>
+
 
     <h3 class="h7 block pt3">{$ texts.followUs $}</h3>
     <ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">

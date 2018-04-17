@@ -1,7 +1,7 @@
 {% set
 	pageData =
 		{
-			name: 'home.html',
+			name: 'index.html',
 			lang: 'en',
 
 			title: '',
@@ -10,7 +10,7 @@
 			keywords: '',
 			canonical: 'https://localhost:8000',
 
-			contentFile: 'templates/pages/home/home.content.nunjucks',
+			contentFile: 'templates/pages/index/index.content.nunjucks',
 
 			scripts: [
 				{
@@ -43,7 +43,7 @@
 			],
 
 			css: [
-				"home"
+				"index"
 			],
 
 			structuredData: '{

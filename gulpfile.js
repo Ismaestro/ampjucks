@@ -16,8 +16,7 @@ var gulp = require('gulp'),
 var config = {
   url: 'http://localhost',
   port: 8000,
-  defaultLanguage: 'en',
-  indexFileName: 'home.html'
+  defaultLanguage: 'en'
 };
 
 gulp.task('development', function (done) {
@@ -43,7 +42,7 @@ gulp.task('watch', function () {
 
 gulp.task('openBrowser', function () {
   return gulp.src(__filename)
-    .pipe(open({uri: 'http://localhost:' + config.port + '/' + config.defaultLanguage + '/' + config.indexFileName}));
+    .pipe(open({uri: 'http://localhost:' + config.port + '/' + config.defaultLanguage + '/'}));
 });
 
 gulp.task('build', function (done) {
