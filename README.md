@@ -4,8 +4,8 @@
 
 ## Live demo
 
-* [English](https://ismaestro.github.io/ampjucks/en/home.html)
-* [Spanish](https://ismaestro.github.io/ampjucks/es/home.html)
+* [English](https://ampjucks.com/)
+* [Spanish](https://ampjucks.com/es)
 
 ## Usage
 
