@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://localhost:8000/en/home.html</loc>
-        <lastmod>2018-04-11T15:37:13.048Z</lastmod>
+        <loc>http://localhost:8000/en/</loc>
+        <lastmod>2018-04-17T11:03:08.364Z</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8000/es/home.html</loc>
-        <lastmod>2018-04-11T15:37:13.049Z</lastmod>
+        <loc>http://localhost:8000/es/</loc>
+        <lastmod>2018-04-17T11:03:08.363Z</lastmod>
     </url>
 </urlset>
