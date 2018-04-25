@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+        <loc>http://localhost:8000/en/cart.html</loc>
+        <lastmod>2018-04-25T14:16:42.781Z</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:8000/en/</loc>
-        <lastmod>2018-04-17T11:03:08.364Z</lastmod>
+        <lastmod>2018-04-25T14:16:42.841Z</lastmod>
     </url>
     <url>
         <loc>http://localhost:8000/es/</loc>
-        <lastmod>2018-04-17T11:03:08.363Z</lastmod>
+        <lastmod>2018-04-25T14:16:42.846Z</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8000/es/tienda.html</loc>
+        <lastmod>2018-04-25T14:16:42.847Z</lastmod>
     </url>
 </urlset>
