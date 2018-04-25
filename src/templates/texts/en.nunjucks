@@ -17,7 +17,28 @@
 			set3Series: 'Sprocket Set 3 Series',
 			timelessStyle: 'The steel-framed complete bike that combines peerless performance with timeless style.',
 			noSleep: 'No Sleep \'til Brooklyn',
-			earlyMornings: 'Early mornings, black coffee, carbs. We spend a week on the road with New York\'s Five Borough Cycle Club.'
+			earlyMornings: 'Early mornings, black coffee, carbs. We spend a week on the road with New York\'s Five Borough Cycle Club.',
+			yourBasket: 'Your Basket',
+			caliperBrakes: 'Caliper Brakes',
+			fitsMost: 'Fits most wheel sizes and designed to last long.',
+			sprocketSet: 'Sprocket Set',
+			steelLong: 'Steel, designed for long lasting stability.',
+			orderSummary: 'Order Summary',
+			subtotal: 'Subtotal',
+			shipping: 'Shipping',
+			total: 'Total',
+			donec: 'Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.',
+			checkout: 'checkout',
+			youMayAlso: 'You may also like',
+			fixieBlue: 'Fixie Blue',
+			chainSet: 'Chain set',
+			leatherSaddle: 'Leather Saddle',
+			16Speed: '16-Speed',
+			redCruiser: 'Red Cruiser',
+			hornHandles: 'Horn Handles',
+			caliperBrakes: 'Caliper Brakes',
+			roadBike: 'Road Bike',
+			wheelSet: 'Wheel Set'
 		}
 %}
 {% extends "templates/layout.nunjucks" %}

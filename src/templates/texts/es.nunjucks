@@ -17,7 +17,28 @@
             set3Series: 'Sprocket Set 3 Series',
             timelessStyle: 'La bicicleta completa con marco de acero que combina un rendimiento incomparable con un estilo atemporal.',
             noSleep: 'No duermas hasta Brooklyn',
-            earlyMornings: 'Temprano por la mañana, café negro, carbohidratos. Pasamos una semana en la carretera con Five Borough Cycle Club de Nueva York.'
+            earlyMornings: 'Temprano por la mañana, café negro, carbohidratos. Pasamos una semana en la carretera con Five Borough Cycle Club de Nueva York.',
+            yourBasket: 'Tú cesta',
+            caliperBrakes: 'Frenos pinza',
+            fitsMost: 'Encaja en la mayoría de ruedas y está diseñado para durar mucho tiempo',
+            sprocketSet: 'Juego de piñones',
+            steelLong: 'Acero, diseñado para una estabilidad duradera.',
+            orderSummary: 'Resumen del pedido',
+            subtotal: 'Subtotal',
+            shipping: 'Envío',
+            total: 'Total',
+            donec: 'Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. ',
+            checkout: 'Pago',
+            youMayAlso: 'También te puede gustar',
+            fixieBlue: 'Fixie Blue',
+            chainSet: 'Cadenas',
+            leatherSaddle: 'Silla de cuero',
+            16Speed: '16 Velocidades ',
+            redCruiser: 'Red Cruiser',
+            hornHandles: 'Manijas de cuerno',
+            caliperBrakes: 'Frenos de pinza',
+            roadBike: 'Bici de carretera',
+            wheelSet: 'Juego de ruedas'
         }
 %}
 {% extends "templates/layout.nunjucks" %}
