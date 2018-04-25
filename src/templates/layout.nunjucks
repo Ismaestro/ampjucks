@@ -60,17 +60,17 @@
         *   Custom CSS Code
         **-->
     <style amp-custom>
-        {%- include "sass/css/reset.css" %}
-        {%- include "sass/css/normalize.css" %}
-        {%- include "sass/css/global.css" %}
+        {%- include "styles/css/reset.css" %}
+        {%- include "styles/css/normalize.css" %}
+        {%- include "styles/css/global.css" %}
 
-        {%- include "sass/css/header.css" %}
-        {%- include "sass/css/sidebar.css" %}
-        {%- include "sass/css/footer.css" %}
+        {%- include "styles/css/header.css" %}
+        {%- include "styles/css/sidebar.css" %}
+        {%- include "styles/css/footer.css" %}
 
         {% for cssFile in pageData.css -%}
 
-        {% include "sass/css/" + cssFile + ".css" %}
+        {% include "styles/css/" + cssFile + ".css" %}
 
         {% endfor %}
     </style>

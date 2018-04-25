@@ -61,7 +61,7 @@ gulp.task('sass', function () {
   return gulp.src('src/**/*.scss')
     .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(rename({dirname: ''}))
-    .pipe(gulp.dest('src/sass/css/'));
+    .pipe(gulp.dest('src/styles/css/'));
 });
 
 gulp.task('renderTemplates', function () {
