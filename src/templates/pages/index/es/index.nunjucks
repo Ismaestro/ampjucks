@@ -56,4 +56,4 @@
 			}'
 		}
 %}
-{% extends "templates/texts/" + pageData.lang + ".nunjucks" %}
+{% extends "templates/i18n/" + pageData.lang + ".nunjucks" %}
