@@ -6,6 +6,10 @@
 %}
 {%
     set urls = {
+        cart: {
+            es: 'tienda',
+            en: 'cart'
+        }
     }
 %}
 <!doctype html>

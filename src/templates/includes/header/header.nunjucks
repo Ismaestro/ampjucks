@@ -6,7 +6,7 @@
             <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
         </svg>
     </div>
-    <a href="#"
+    <a href="/{$ pageData.lang $}"
        class="text-decoration-none inline-block mx-auto ampstart-headerbar-home-link mb1 md-mb0 ">
         <amp-img src="/assets/img/logo.png" width="96" height="27" layout="fixed" class="my0 mx-auto "
                  alt=""></amp-img>
@@ -14,8 +14,7 @@
     <div class="ampstart-headerbar-fixed center m0 p0 flex justify-center nowrap absolute top-0 right-0 pt2 pr3">
         <div class="mr2">
         </div>
-        <a href="cart.amp.html" class="text-decoration-none mr2 ampstart-headerbar-fixed-link ">
-
+        <a href="{$ urls.cart[pageData.lang] $}.html" class="text-decoration-none mr2 ampstart-headerbar-fixed-link ">
             <div class="ampstart-headerbar-icon-wrapper relative">
                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 37 35">
                     <g>
