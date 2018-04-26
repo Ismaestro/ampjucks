@@ -110,7 +110,7 @@ gulp.task('sitemap', function () {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('validateHTML', function () {
+gulp.task('validate', function () {
   return gulp.src('dist/**/*.html')
     .pipe(gulpAmpValidator.validate())
     .pipe(gulpAmpValidator.format())

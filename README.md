@@ -1,4 +1,4 @@
-# Example project to build STATIC websites using AMP + Nunjucks + SASS + Gulp tasks
+# Base project to built a website with AMP, Nunjucks and Gulp
 
 > ### Base project made with much  :heart:. Contains amp components, and a free template. Yes, AMP validated.
 
