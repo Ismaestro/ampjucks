@@ -1,7 +1,7 @@
 {% set
 	pageData =
 		{
-			name: 'tienda.html',
+			name: 'cesta.html',
 			lang: 'en',
 
 			title: '',

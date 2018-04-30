@@ -7,7 +7,7 @@
 {%
     set urls = {
         cart: {
-            es: 'tienda',
+            es: 'cesta',
             en: 'cart'
         }
     }
