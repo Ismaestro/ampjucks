@@ -3,10 +3,16 @@
 
   <p align="center">
     Base project to built a website with AMP, Nunjucks and Gulp
+  <br>
+    <br>
+    <a href="https://ampjucks.com">
+      <img src="https://media.giphy.com/media/1ZmidYgwwXCs0oFpIK/giphy.gif" alt="Demo example"/>
+    </a>
     <br>
     <a href="https://github.com/Ismaestro/ampjucks/issues/new?template=bug.md">Report bug</a>
     ·
     <a href="https://github.com/Ismaestro/ampjucks/issues/new?template=feature.md&labels=feature">Request feature</a>
+    <br>
   </p>
 </p>
 
