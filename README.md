@@ -5,7 +5,7 @@
     Base project to built a website with AMP, Nunjucks and Gulp
   <br>
     <br>
-    <a href="https://ampjucks.com">
+    <a href="https://ismaestro.github.io/ampjucks">
       <img src="https://media.giphy.com/media/1ZmidYgwwXCs0oFpIK/giphy.gif" alt="Demo example"/>
     </a>
     <br>
